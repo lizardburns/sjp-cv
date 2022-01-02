@@ -1,0 +1,249 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Resume/CV for A4 paper format
+% XeLaTeX Template
+% Version 1.1
+%
+% A4 version author:
+% Marvin Frommhold (depressiverobot.com)
+% https://github.com/depressiveRobot/friggeri-cv-a4
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Options
+% 'print': remove colors from this template for printing
+% 'nocolors' to disable colors in section headers
+
+\documentclass[]{friggeri-cv-a4}
+
+\usepackage{enumitem}
+
+\addbibresource{bibliography.bib} % Specify the bibliography file to include publications
+
+\begin{document}
+\setlist{noitemsep}
+
+\header{Stephen}{Price}{Researcher, Statistician \& Data Scientist} % Your name and current job title/field
+
+%----------------------------------------------------------------------------------------
+% SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\section{Contact}
+%Dudley, UK
+%+44 7800 896114
+\href{mailto:sjamesprice@gmail.com}{\small{sjamesprice@gmail.com}}
+~
+\section{Links}
+\href{https://2infectious.wordpress.com}{Research site}
+\href{https://scholar.google.co.uk/citations?user=Ob0mGTUAAAAJ&hl=en&oi=sra}{Google scholar}
+\href{https://www.researchgate.net/profile/Stephen_Price10}{ResearchGate}
+\href{https://github.com/lizardburns}{GitHub}
+~
+~
+~
+\section{Programming}
+R
+bash
+Python
+SQL
+~
+\section{Modelling}
+Regression (LM, GLM)
+additive (GAM)
+mixed-effects
+machine learning
+spatial
+~
+~
+%\section{Reporting}
+%markdown
+%Word
+%LaTeX
+~
+\section{Awards}
+UoN Zoology prize
+QMUL volunteer of the year
+Ofqual recognition awards for innovation and impact
+~
+~
+~
+\section{References}
+Ofqual, on request
+\href{mailto:Trent.Garner@ioz.ac.uk}{Trent Garner, ZSL}
+~
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+%	PROFILE SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{profile}
+%\hspace{0.75cm} Highly analytical, extremely versatile and educated to PhD level, I am a strong independent learner with a determined attitude and experience of leading projects to success. Resilient and accustomed to overcoming challenges through problem-solving and collaboration, I bring a track record of working innovatively to tease out meaning from complex datasets and deliver findings to stakeholders through professional reports and clear presentations.
+
+%\hspace{0.75cm} As an \textbf{investigator}, I use my creativity and logic to design experiments and plan workflows which generate data using cutting-edge technologies. As an \textbf{analyst}, I use sophisticated methods to analyse a variety of datasets with bespoke scripts and pipelines tailored to individual problems. As a \textbf{project manager}, I have experience of funding applications, budgets, staff supervision and development, and building networks.
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{experience}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry
+{2019--2021}
+{Senior Research \& Data Analyst}
+{Ofqual}
+{%
+%\begin{itemize}
+%\setlength\itemsep{-1em}
+\textbf{Innovation:} supported projects across Research, Data \& Analytics and Standards teams by bringing innovations and delivering bespoke solutions, e.g. development of a QR code based mark-tracking system. \\
+\textbf{Reproducible analytical pipelines:} developed a suite of internal R packages for cleaning, quality-checking, and analysis of Official Statistics and exam grading datasets, including functions \& unit tests, documentation \& vignettes. \\
+\textbf{Data engineering:} wrote R pipelines to join raw datasets and engineer features to support regulation of standards in assessment. \\
+\textbf{Interactive applications:} routinely produced interactive R Shiny apps: 4 published apps, 20 internal, 1 private external. Transformed analysis of consultations through use of bespoke internal apps enabling more than 30 users to make informed decisions under pressure. \\
+\textbf{Data visualisation:} wrote R package to implement company brand and style in data visualisations. Includes vignettes packed with examples \& best practise.%
+%\end{itemize}%
+}
+
+%------------------------------------------------
+
+\entry
+{2013--2019}
+{Research Scientist}
+{UCL \& ZSL Institute of Zoology}
+{Investigated the spread and evolution of viruses using genomics, laboratory experiments and field studies. Collaborated with 19 research groups in 16 countries. \\
+\textbf{Problem-solving:} iterative experimental design, logistics/planning of field-based projects. \\
+\textbf{Data analysis:} from genomics to GIS and citizen science datasets. Routinely used statistical models (LM, GLM, GAM, mixed-effects). Also used machine learning approaches. As a supervisor, collaborator \& peer reviewer, I reviewed data summaries and identified patterns in raw data requiring further investigation. \\
+\textbf{Method Development:} molecular and cell culture systems to study viruses. \\
+\textbf{Leadership:} contributed to or led projects that won £800,000 in funding. Supervised 7 postgraduate and 7 undergraduate students as well as technical staff. \\
+\textbf{Publication:} \href{https://2infectious.wordpress.com/publications}{27 articles in academic journals} since 2013 \& 2 magazine articles.}
+
+%------------------------------------------------
+
+\entry
+{2010--2012}
+{Biodiversity Programme Schools Coordinator}
+{Conserve Me Foundation}
+{Part of a team that created \& delivered a 6-week programme of workshops on biodiversity and the environment. Received the QMUL volunteer of the year award.}
+
+%------------------------------------------------
+
+\entry
+{2009}
+{Parasitology Research Technician}
+{University of Bristol}
+{Planned and conducted lab experiments \& reported results to senior scientists.}
+
+%------------------------------------------------
+
+\entry
+{2008--2009}
+{Project Manager}
+{wibfilm}
+{Prepared pitches and proposals, coordinated teams/kit, administered finances.}
+
+%------------------------------------------------
+
+\entry
+{2003--2004}
+{Assistant Quality Manager}
+{LB Parkes Ltd}
+{Monitored chemical concentrations and safety records for industrial processes.}
+
+%------------------------------------------------
+
+\entry
+{1998--1999}
+{English Teacher}
+{Pamir Public School, Pakistan}
+{Created and delivered a curriculum for 5-16 year olds in a school in an isolated, subsistence-farming community in the Hindu Kush.}
+
+%------------------------------------------------
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{education}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry
+{2009--2013}
+{PhD {\normalfont Epidemiology/Conservation/Population Genetics}}
+{Queen Mary University of London}
+{\emph{Emergence of a virulent wildlife disease: using spatial epidemiology and phylogenetic methods to reconstruct the spread of amphibian viruses}}
+
+%------------------------------------------------
+
+\entry
+{2004--2007}
+{BSc Hons Zoology}
+{University of Nottingham}
+{1\textsuperscript{st} class honours; awarded Zoology prize for top mark in year}
+
+%------------------------------------------------
+
+\end{entrylist}
+
+\newpage
+\newgeometry{left=2.54cm, top=2.54cm, bottom=2.54cm}
+
+%----------------------------------------------------------------------------------------
+% training section
+%----------------------------------------------------------------------------------------
+
+\section{training (selected courses)}
+
+\textbf{ONS Secure Research Service Accredited Researcher training (2019)};
+\textbf{Advanced Python} PR Statistics (2018);
+\textbf{Managing Big Data with MySQL} MOOC from Duke University (2018);
+\textbf{Programming for Everybody (Python)} MOOC from University of Michigan (2015);
+\textbf{Grant Writing \& Project Management} British Ecological Society (2013);
+\textbf{R Statistical Programming} Institute of Zoology (2011);
+\textbf{ArcGIS} Institute of Zoology (2010)
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{presentations \& media coverage}
+
+\begin{itemize}
+\item 12 talks at international conferences
+\item seminars \& presentations to academics, stakeholders \& the public
+\item regular presentations at group and departmental meetings
+\item conceived and supervised production of \href{https://2infectious.wordpress.com/2019/06/25/where-did-the-frogs-go-and-why/}{an animated movie narrated by Stephen Fry} for dissemination of research findings to diverse audience
+\item I promoted my work through \href{https://2infectious.wordpress.com/in-the-media/}{specialist and mainstream media}, including the New Scientist, BBC radio and national daily newspapers. An overview of my online reach is available via \href{https://profiles.impactstory.org/u/0000-0001-6983-6250}{Impact Story}.
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+% PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{publications}
+
+\printbibsection{article}{Selected journal articles} % Print all articles from the bibliography
+\printbibsection{report}{Reports} % Print all articles from the bibliography
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
